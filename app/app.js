@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM, { render } from 'react-dom';
+import Nav from './components/Nav';
+import HomeSearch from './components/HomeSearch';
 
 
 class App extends React.Component {
 
 	render(){
 		return (
-			<h1>Its working</h1>
+			<div>
+				<Nav />
+				<HomeSearch/>
+			</div>
 		)
 	}
 }

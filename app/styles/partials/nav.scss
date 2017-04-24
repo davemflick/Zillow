@@ -1,0 +1,108 @@
+.navbar {
+	z-index: 10;
+
+	.navbar-header {
+		.zillowPNG {
+			width: 100px;
+			margin-top: 0;
+			z-index: 15;
+			position: absolute;
+			top: -10px;
+			@media screen and (max-width: $smallScreen){
+				display: none;
+			}
+		}
+	}
+	.navbar-left {
+		margin-left: 75px;
+		.pdLink {
+			color: black;
+		}
+		.pdLink:hover {
+			color: blue;
+		}
+	}
+	@media screen and (min-width: 769px){
+		.zillowPNGsmall {
+		display: none;
+		}
+	}
+	
+}
+
+.navbar-right {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	a{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.signIn, .join, p {
+		display: inline;
+		
+	}
+	.signIn, .join {
+		background: none;
+		border: none;
+		color: blue;
+		width: 100%;
+		margin-right: 10px;
+	}
+	.signIn:hover, .join:hover {
+		color: lightblue;
+	}
+	p{
+		font-size: 17px;
+		padding: 0;
+	}
+	.logInIcon {
+			display: none;
+			margin-right: 40px;
+		}
+	@media screen and (max-width: $smallScreen){
+		.signIn, .join, p{
+			display: none;
+		}
+	}
+	@media screen and (max-width:840px) and (min-width: 769px){
+		.long{
+			display: none;
+		}
+		.logInIcon {
+			display: inline-block;
+		}
+	}
+}
+
+@media screen and (max-width: $smallScreen){
+	.navbar-right{
+		display: none;
+	}
+	.navbar{
+		background: none;
+		border: none;
+		.collapseNav{
+			position: absolute;
+			top: 10px;
+			left: 20px;
+			border: none;
+			padding: 0;
+			background: none;
+			.zillowPNGsmall{
+				width:50px;
+				margin-left: -10px;
+			}
+			.leftArrow{
+				color: #1377E1;
+			}
+		}
+	}
+	.navbar-collapse {
+		width: 50%;
+		background-color: #ccc;
+		margin-left: 0 !important;
+		padding-left: 0;
+	}
+
+}

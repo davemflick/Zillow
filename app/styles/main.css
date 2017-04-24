@@ -6,4 +6,97 @@ body, html {
   height: 100%;
   margin: 0; }
 
+.videoBack {
+  background-color: #365FBB;
+  min-width: 100%;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0; }
+
+@media screen and (min-width: 925px) {
+  .videoBack {
+    -webkit-transform: scaleX(1.5);
+    -moz-transform: scaleX(1.5);
+    top: 50px; } }
+.navbar {
+  z-index: 10; }
+  .navbar .navbar-header .zillowPNG {
+    width: 100px;
+    margin-top: 0;
+    z-index: 15;
+    position: absolute;
+    top: -10px; }
+    @media screen and (max-width: 768px) {
+      .navbar .navbar-header .zillowPNG {
+        display: none; } }
+  .navbar .navbar-left {
+    margin-left: 75px; }
+    .navbar .navbar-left .pdLink {
+      color: black; }
+    .navbar .navbar-left .pdLink:hover {
+      color: blue; }
+  @media screen and (min-width: 769px) {
+    .navbar .zillowPNGsmall {
+      display: none; } }
+
+.navbar-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .navbar-right a {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  .navbar-right .signIn, .navbar-right .join, .navbar-right p {
+    display: inline; }
+  .navbar-right .signIn, .navbar-right .join {
+    background: none;
+    border: none;
+    color: blue;
+    width: 100%;
+    margin-right: 10px; }
+  .navbar-right .signIn:hover, .navbar-right .join:hover {
+    color: lightblue; }
+  .navbar-right p {
+    font-size: 17px;
+    padding: 0; }
+  .navbar-right .logInIcon {
+    display: none;
+    margin-right: 40px; }
+  @media screen and (max-width: 768px) {
+    .navbar-right .signIn, .navbar-right .join, .navbar-right p {
+      display: none; } }
+  @media screen and (max-width: 840px) and (min-width: 769px) {
+    .navbar-right .long {
+      display: none; }
+    .navbar-right .logInIcon {
+      display: inline-block; } }
+
+@media screen and (max-width: 768px) {
+  .navbar-right {
+    display: none; }
+
+  .navbar {
+    background: none;
+    border: none; }
+    .navbar .collapseNav {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      border: none;
+      padding: 0;
+      background: none; }
+      .navbar .collapseNav .zillowPNGsmall {
+        width: 50px;
+        margin-left: -10px; }
+      .navbar .collapseNav .leftArrow {
+        color: #1377E1; }
+
+  .navbar-collapse {
+    width: 50%;
+    background-color: #ccc;
+    margin-left: 0 !important;
+    padding-left: 0; } }
+
 /*# sourceMappingURL=main.css.map */
