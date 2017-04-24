@@ -1,25 +1,77 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: none; }
 
 body, html {
   width: 100%;
   height: 100%;
-  margin: 0; }
+  margin: 0;
+  font-family: sans-serif; }
 
-.videoBack {
-  background-color: #365FBB;
-  min-width: 100%;
-  max-height: 500px;
-  width: auto;
-  height: auto;
+.homeSearch {
+  width: 100%;
+  top: 50px;
   position: absolute;
-  top: 0; }
+  height: 500px;
+  overflow: hidden;
+  padding: 0; }
+  .homeSearch .videoBack {
+    position: absolute;
+    background: #365FBB;
+    width: 100%;
+    max-height: 500px; }
 
+.searchBar {
+  z-index: 5;
+  width: 70%;
+  position: relative;
+  top: 35%;
+  left: 15%; }
+  .searchBar .searchOptionBtns {
+    display: flex;
+    justify-content: center; }
+    .searchBar .searchOptionBtns .searchOpt {
+      width: 25%;
+      height: 50px;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid white;
+      font-size: 18px; }
+    .searchBar .searchOptionBtns .searchOpt:hover {
+      background: rgba(60, 110, 200, 0.5); }
+
+.searchField {
+  margin-top: 20px;
+  height: 50px;
+  width: 100%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  border-radius: 7px; }
+  .searchField .searchInput {
+    width: 80%;
+    height: 50px;
+    border: none;
+    font-size: 14px; }
+  .searchField .submitSearch {
+    width: 15%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: #0074E4;
+    color: white; }
+
+@media screen and (max-width: 768px) {
+  .homeSearch {
+    top: 0; } }
 @media screen and (min-width: 925px) {
-  .videoBack {
-    -webkit-transform: scaleX(1.5);
-    -moz-transform: scaleX(1.5);
-    top: 50px; } }
+  .homeSearch {
+    top: 50px; }
+    .homeSearch .videoBack {
+      -webkit-transform: scaleX(1.5);
+      -moz-transform: scaleX(1.5); } }
 .navbar {
   z-index: 10; }
   .navbar .navbar-header .zillowPNG {
