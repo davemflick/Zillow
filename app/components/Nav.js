@@ -8,12 +8,12 @@ export default class Nav extends React.Component {
 			  <div className="container-fluid">
 			      <div className="navbar-header">
       				<a className="navbar-brand" href="#">
-        			  <img className="zillowPNG" alt="Brand" src="./app/styles/images/zillow.png"/>
+        			  <img className="zillowPNG" alt="Brand" src="../app/styles/images/zillow.png"/>
      				 </a>
      				 <button type="button" className="collapseNav" data-toggle="collapse" data-target=".navbar-collapse">
 			          <span className="sr-only">toggle navigation</span>
 			          	<span className='leftArrow'>⬅︎ </span>
-			          	<img className="zillowPNGsmall" alt="Brand" src="./app/styles/images/zillow2.png"/>
+			          	<img className="zillowPNGsmall" alt="Brand" src="../app/styles/images/zillow2.png"/>
 			     	 </button>
      			  </div>
      			    <ul className="nav navbar-nav navbar-left collapse navbar-collapse">
