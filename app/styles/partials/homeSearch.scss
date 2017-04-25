@@ -16,6 +16,17 @@ $medScreen: 925px;
 	}
 }
 
+.warning {
+	z-index: 5;
+	position: relative;
+	color: white;
+	background: rgba(0,0,0,0.5);
+	width: 50%;
+	top: 10%;
+	left: 25%;
+	text-align: center;
+}
+
 .searchBar{
 	z-index: 5;
 	width: 70%;
@@ -41,6 +52,16 @@ $medScreen: 925px;
 		}
 	}
 }
+
+.catPointer {
+		width: 16px;
+		height: 16px;
+		transform: rotate(45deg);
+		background-color: white;
+		position: relative;
+		z-index: -10;
+		top: -25px;
+	}
 
 .searchField{
 	margin-top: 20px;
