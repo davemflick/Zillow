@@ -34,7 +34,10 @@ $medScreen: 925px;
 			font-size: 18px;
 		}
 		.searchOpt:hover{
-			background: rgba(60,110,200, 0.5);
+			background: rgba(60,110,200, 0.7);
+		}
+		.searchOpt.active {
+			background: rgba(45,136,45, 0.8);
 		}
 	}
 }

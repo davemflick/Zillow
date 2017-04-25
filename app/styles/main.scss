@@ -21,5 +21,8 @@ body, html {
 @import "partials/homeSearch";
 @import "partials/nav";
 
-
+// <button className={this.state.active} type="button">Buy</button>
+// 						<button className={this.state.inactive} type="button">Rent</button>
+// 						<button className={this.state.inactive} type="button">Sell</button>
+// 						<button className={this.state.inactive} type="button">Zestimate</button>
 
