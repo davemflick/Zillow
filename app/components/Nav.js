@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Proptypes from 'prop-types';
 export default class Nav extends React.Component {
 
 	render(){
