@@ -3,6 +3,7 @@ import ReactDOM, { render } from 'react-dom';
 import Proptypes from 'prop-types';
 import Nav from './Nav';
 import HomeSearch from './HomeSearch';
+import Body from './Body';
 
 
 class Home extends Component {
@@ -15,14 +16,16 @@ class Home extends Component {
 		}
 	}
 
+
 	render(){
 		return (
-			<div>
+			<div className="bodyContainer">
 				<HomeSearch 
 					posterImg={this.state.posterImg} 
 					backVideo={this.state.backVideo}
 					leftSearch={"10%"}
 					searchPage={"Buy"} />
+		
 			</div>
 		)
 	}

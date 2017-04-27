@@ -19,12 +19,14 @@ body, html {
 	height: 100%;
 	margin: 0;
 	font-family: sans-serif;
-
 }
+
 
 
 @import "partials/homeSearch";
 @import "partials/nav";
+
+
 
 // <button className={this.state.active} type="button">Buy</button>
 // 						<button className={this.state.inactive} type="button">Rent</button>

@@ -2,6 +2,10 @@ import React from 'react';
 import Proptypes from 'prop-types';
 export default class Nav extends React.Component {
 
+	handlePageLink() {
+		alert("Page Links Invalid, This is a single Page App");
+	}
+
 	render(){
 		return (
 			<nav className="navbar navbar-default">
@@ -16,14 +20,14 @@ export default class Nav extends React.Component {
 			          	<img className="zillowPNGsmall" alt="Brand" src="../app/styles/images/zillow2.png"/>
 			     	 </button>
      			  </div>
-     			    <ul className="nav navbar-nav navbar-left collapse navbar-collapse">
-			          <li><a className='pdLink' href="#buy">Buy</a></li>
-			          <li><a className='pdLink' href="#rent">Rent</a></li>
-			          <li><a className='pdLink' href="#sell">Sell</a></li>
-			          <li><a className='pdLink' href="#mortgages">Mortgages</a></li>
-			          <li><a className='pdLink' href="#agentFinder">Agent finder</a></li>
-			          <li><a className='pdLink' href="#homeDesign">Home design</a></li>
-			          <li><a className='pdLink' href="#more">More</a></li>
+     			    <ul className="nav navbar-nav navbar-left collapse navbar-collapse" onClick={this.handlePageLink}>
+			          <li><a className='pdLink' href="#">Buy</a></li>
+			          <li><a className='pdLink' href="#">Rent</a></li>
+			          <li><a className='pdLink' href="#">Sell</a></li>
+			          <li><a className='pdLink' href="#">Mortgages</a></li>
+			          <li><a className='pdLink' href="#">Agent finder</a></li>
+			          <li><a className='pdLink' href="#">Home design</a></li>
+			          <li><a className='pdLink' href="#">More</a></li>
 				    </ul>
 				    <ul className="nav navbar-nav navbar-right">
 				      <li><a className="logInIcon" href="#logIn">👤 </a></li>
