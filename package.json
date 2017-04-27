@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/davemflick/Zillow#readme",
   "dependencies": {
+    "axios": "^0.16.1",
     "debug": "^2.6.4",
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
