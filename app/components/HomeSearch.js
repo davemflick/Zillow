@@ -82,7 +82,7 @@ export default class HomeSearch extends React.Component {
 								className="searchInput" 
 								type="text" 
 								name="search" 
-								placeholder="Input an Address, City or Zip Code!"/> 
+								placeholder="This doesn't do anything!!!"/> 
 							<button className="submitSearch" type='button'> Search </button>
 					</div>
 				</div>

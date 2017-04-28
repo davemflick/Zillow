@@ -20,7 +20,82 @@ body, html {
 	margin: 0;
 	font-family: sans-serif;
 }
+.bodyContainer {
+	overflow: hidden;
+}
+.availProp {
+	margin: 0 auto;
+	width: 100%;
+	h1, p {
+		text-align: center;
+	}
+	.properties {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 350px;
+		background-color: #ddd;
 
+		@media screen and (max-width: $smallScreen) {
+			.property2, .property3 {
+				display: none;
+			}
+		}
+
+		@media screen and (max-width: 1070px) {
+			.property3 {
+				display: none;
+			}
+		}
+		.property {
+			position: relative;
+			width: 350px;
+			height: 220px;
+			border: 1px solid black;
+			background-repeat: no-repeat;
+    		background-size: 100%;
+    		.propDetails {
+				position: absolute;
+				bottom: 0;
+				left: 10px;
+			}
+		}
+		.property1{	
+			background-color: #28CBFB;
+			background-image: url('./images/house1.png');	
+		}
+		.property2{
+			background-color: #69B96A;
+			background-image: url('./images/house2.png');
+		}
+		.property3{
+			background-color: #7D7F93;
+			background-image: url('./images/house3.png');
+		}
+
+	}
+}
+
+.propDetails{
+	color: white;
+	.redDot {
+		display: inline-block;
+		height: 12px;
+		width: 12px;
+		border: 1px solid white;
+		border-radius: 50%;
+		background-color: red;
+	}
+	.priceDesc {
+		h3, p {
+			display: inline;
+		}
+	}
+	.propDescrip {
+		color: #ddd;
+		font-size: 12px;
+	}
+}
 
 
 @import "partials/homeSearch";

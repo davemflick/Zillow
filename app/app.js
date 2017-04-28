@@ -24,18 +24,21 @@ class App extends React.Component{
 	}
 
 
-	componentWillMount(){
-	const URL = "http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz1985no7x34b_17jma&address=2114+Bigelow+Ave&citystatezip=Seattle%2C+WA";
-		$.ajax({
-			url: URL,
-			type: 'POST',
-			crossDomain: true,
-			dataType: 'jsonp',
-			success: (data)=> console.log(data),
-			error: err => console.error(err),
-		})
+	// componentWillMount(){
+	// const URL = "http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz1985no7x34b_17jma&address=2114+Bigelow+Ave&citystatezip=Seattle%2C+WA";
+	// 	$.ajax({
+	// 		url: URL,
+	// 		type: 'POST',
+	// 		crossDomain: true,
+	// 		  contentType: 'text/plain',
+ //                    xhrFields: { ithCredentials: false },
+ //                    headers: {'Accept':'application/json'},
+ //                    dataType: 'jsonp',
+	// 		success: (data)=> console.log(data),
+	// 		error: err => console.error(err),
+	// 	})
 		
-	}
+	// }
 
 	render() {
 		return (

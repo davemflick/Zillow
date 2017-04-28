@@ -8,16 +8,73 @@ body, html {
   margin: 0;
   font-family: sans-serif; }
 
+.bodyContainer {
+  overflow: hidden; }
+
+.availProp {
+  margin: 0 auto;
+  width: 100%; }
+  .availProp h1, .availProp p {
+    text-align: center; }
+  .availProp .properties {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+    background-color: #ddd; }
+    @media screen and (max-width: 768px) {
+      .availProp .properties .property2, .availProp .properties .property3 {
+        display: none; } }
+    @media screen and (max-width: 1070px) {
+      .availProp .properties .property3 {
+        display: none; } }
+    .availProp .properties .property {
+      position: relative;
+      width: 350px;
+      height: 220px;
+      border: 1px solid black;
+      background-repeat: no-repeat;
+      background-size: 100%; }
+      .availProp .properties .property .propDetails {
+        position: absolute;
+        bottom: 0;
+        left: 10px; }
+    .availProp .properties .property1 {
+      background-color: #28CBFB;
+      background-image: url("./images/house1.png"); }
+    .availProp .properties .property2 {
+      background-color: #69B96A;
+      background-image: url("./images/house2.png"); }
+    .availProp .properties .property3 {
+      background-color: #7D7F93;
+      background-image: url("./images/house3.png"); }
+
+.propDetails {
+  color: white; }
+  .propDetails .redDot {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: red; }
+  .propDetails .priceDesc h3, .propDetails .priceDesc p {
+    display: inline; }
+  .propDetails .propDescrip {
+    color: #ddd;
+    font-size: 12px; }
+
 .homeSearch {
   width: 100%;
   height: 500px;
-  overflow: hidden;
+  overflow: hidden !important;
   padding: 0; }
   .homeSearch .videoBack {
     position: absolute;
     background: #365FBB;
     width: 100%;
-    max-height: 500px; }
+    max-height: 500px;
+    object-fit: fill; }
 
 .warning {
   z-index: 5;
@@ -110,12 +167,6 @@ body, html {
 
   .submitSearch {
     font-size: 12px; } }
-@media screen and (min-width: 925px) {
-  .homeSearch {
-    top: 50px; }
-    .homeSearch .videoBack {
-      -webkit-transform: scaleX(1.5);
-      -moz-transform: scaleX(1.5); } }
 .navbar {
   z-index: 10;
   margin-bottom: 0; }
