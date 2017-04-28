@@ -1,0 +1,105 @@
+.bodyContainer {
+  overflow: hidden; }
+
+.availProp {
+  margin: 0 auto;
+  width: 100%; }
+  .availProp h1, .availProp p {
+    text-align: center; }
+  .availProp .properties {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+    background-color: #ddd; }
+    @media screen and (max-width: 768px) {
+      .availProp .properties .property2, .availProp .properties .property3 {
+        display: none; } }
+    @media screen and (max-width: 1070px) {
+      .availProp .properties .property3 {
+        display: none; } }
+    .availProp .properties .property {
+      position: relative;
+      width: 350px;
+      height: 220px;
+      border: 1px solid black;
+      background-repeat: no-repeat;
+      background-size: 100%; }
+      .availProp .properties .property .propDetails {
+        background: rgba(130, 130, 130, 0.6);
+        width: 100%;
+        padding-left: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0px; }
+    .availProp .properties .property1 {
+      background-color: #28CBFB;
+      background-image: url("./images/house1.png"); }
+    .availProp .properties .property2 {
+      background-color: #69B96A;
+      background-image: url("./images/house2.png"); }
+    .availProp .properties .property3 {
+      background-color: #7D7F93;
+      background-image: url("./images/house3.png"); }
+
+.propDetails {
+  color: white; }
+  .propDetails .For {
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    border: 2px solid white;
+    border-radius: 50%; }
+  .propDetails .Sale {
+    background-color: red; }
+  .propDetails .Rent {
+    background-color: purple; }
+  .propDetails .priceDesc h3, .propDetails .priceDesc p {
+    display: inline; }
+  .propDetails .propDescrip {
+    color: #ddd;
+    font-size: 12px;
+    text-align: left; }
+
+.availRentals {
+  margin: 0 auto;
+  width: 100%; }
+  .availRentals h1, .availRentals p {
+    text-align: center; }
+  .availRentals .properties {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+    background-color: #ddd; }
+    @media screen and (max-width: 768px) {
+      .availRentals .properties .rental2, .availRentals .properties .rental3 {
+        display: none; } }
+    @media screen and (max-width: 1070px) {
+      .availRentals .properties .rental3 {
+        display: none; } }
+    .availRentals .properties .property {
+      position: relative;
+      width: 350px;
+      height: 220px;
+      border: 1px solid black;
+      background-repeat: no-repeat;
+      background-size: 100%; }
+      .availRentals .properties .property .propDetails {
+        background: rgba(130, 130, 130, 0.6);
+        width: 100%;
+        padding-left: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+    .availRentals .properties .rental1 {
+      background-color: #444;
+      background-image: url("./images/rental1.png"); }
+    .availRentals .properties .rental2 {
+      background-color: #69B96A;
+      background-image: url("./images/rental2.png"); }
+    .availRentals .properties .rental3 {
+      background-color: #7D7F93;
+      background-image: url("./images/rental3.png"); }
+
+/*# sourceMappingURL=mainBody.css.map */

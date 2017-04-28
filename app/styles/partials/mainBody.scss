@@ -1,0 +1,148 @@
+$smallScreen: 768px;
+$medScreen: 925px;
+
+.bodyContainer {
+	overflow: hidden;
+}
+
+//FOR SALE
+.availProp {
+	margin: 0 auto;
+	width: 100%;
+	h1, p {
+		text-align: center;
+	}
+	.properties {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 350px;
+		background-color: #ddd;
+
+		@media screen and (max-width: $smallScreen) {
+			.property2, .property3 {
+				display: none;
+			}
+		}
+
+		@media screen and (max-width: 1070px) {
+			.property3 {
+				display: none;
+			}
+		}
+		.property {
+			position: relative;
+			width: 350px;
+			height: 220px;
+			border: 1px solid black;
+			background-repeat: no-repeat;
+    		background-size: 100%;
+    		.propDetails {
+    			background: rgba(130,130,130, 0.6);
+    			width: 100%;
+    			padding-left: 10px;
+				position: absolute;
+				bottom: 0;
+				left: 0px;
+			}
+		}
+		.property1{	
+			background-color: #28CBFB;
+			background-image: url('./images/house1.png');	
+		}
+		.property2{
+			background-color: #69B96A;
+			background-image: url('./images/house2.png');
+		}
+		.property3{
+			background-color: #7D7F93;
+			background-image: url('./images/house3.png');
+		}
+
+	}
+}
+
+.propDetails{
+	color: white;
+	.For {
+		display: inline-block;
+		height: 11px;
+		width: 11px;
+		border: 2px solid white;
+		border-radius: 50%;
+	}
+
+	.Sale {
+		background-color: red;
+	}
+	.Rent{
+		background-color: purple;
+	}
+	.priceDesc {
+		h3, p {
+			display: inline;
+		}
+	}
+	.propDescrip {
+		color: #ddd;
+		font-size: 12px;
+		text-align: left;
+	}
+}
+
+//RENTALS
+.availRentals {
+	margin: 0 auto;
+	width: 100%;
+	h1, p {
+		text-align: center;
+	}
+	.properties {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 350px;
+		background-color: #ddd;
+
+		@media screen and (max-width: $smallScreen) {
+			.rental2, .rental3 {
+				display: none;
+			}
+		}
+
+		@media screen and (max-width: 1070px) {
+			.rental3 {
+				display: none;
+			}
+		}
+		.property {
+			position: relative;
+			width: 350px;
+			height: 220px;
+			border: 1px solid black;
+			background-repeat: no-repeat;
+    		background-size: 100%;
+    		.propDetails {
+    			background: rgba(130,130,130, 0.6);
+    			width: 100%;
+    			padding-left: 10px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+		}
+		.rental1{	
+			background-color: #444;
+			background-image: url('./images/rental1.png');	
+		}
+		.rental2{
+			background-color: #69B96A;
+			background-image: url('./images/rental2.png');
+		}
+		.rental3{
+			background-color: #7D7F93;
+			background-image: url('./images/rental3.png');
+		}
+
+	}
+}
