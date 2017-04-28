@@ -6,7 +6,8 @@ import HomeSearch from './components/HomeSearch';
 // import BuyPage from './components/BuyPage';
 // import RentPage from './components/RentPage';
 import Body from './components/Body';
-import axios from 'axios';
+import Footer from './components/Footer';
+
 
 
 
@@ -50,7 +51,7 @@ class App extends React.Component{
 				backVideo={this.state.backVideo}
 				searchPage={"Buy"} />
 			<Body />
-			
+			<Footer />
 		</div>
 		)
 	}
